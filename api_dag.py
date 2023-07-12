@@ -22,7 +22,7 @@ dag = DAG(dag_id='self',
     start_date = datetime.datetime(2022, 8, 9),
     schedule_interval= '0 19,4 * * *', #5AM and 2PM AEST
     default_args=args,
-    tags=['samsung_etl'],
+    tags=['etl'],
     catchup=False)
 
 # dag tasks definition
